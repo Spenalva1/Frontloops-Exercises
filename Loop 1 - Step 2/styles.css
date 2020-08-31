@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:  Roboto, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/background.jpg");
+}
+
+.payment-method-selection{
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.payment-method-selection p{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.steps{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps .dot{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.steps .first-dot{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.payment-method-selection > *{
+    width: 100%;
+}
+
+.method{
+    text-align: start;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.method.selected{
+    color: rgba(0, 0, 0, 1);
+}
+
+.method .name{
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+.method img{
+    width: 50px;
+}
+
+.method .check{
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.method.selected .check{
+    background-image: url("/img/check.svg");
+    padding-bottom: 25px;
+}
+
+.next{
+    border: none;
+    background-color: #4B83F1;
+    color: white;
+}
+
+.payment-method-selection button{
+    height: 55px;
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+}
+
+.payment-method-selection button:focus{
+    outline: 0;
+}
+
+.payment-method-selection button:active{
+    transform: translateY(2px);
+}
