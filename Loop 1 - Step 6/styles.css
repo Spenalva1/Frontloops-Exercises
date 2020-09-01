@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #4D515D;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sign-up-card{
+    margin-top: 50px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    width: 1000px;
+    display: flex;
+    overflow: hidden;
+}
+
+.sign-up-card > img{
+    width: 40%;
+}
+
+.sign-up-content{
+    width: 60%;
+    background-size: cover;
+}
+
+.sign-up-content h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sign-up-content .methods-wrapper{
+    margin-top: 50px;
+}
+
+.sign-up-content > *{
+    padding: 50px;
+}
+
+.sign-up-content .methods-wrapper .method{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sign-up-content .methods-wrapper .method:hover{
+    background-color: #ffffff;
+    border: none;
+    -webkit-box-shadow: -1px 17px 33px -15px rgba(0,0,0,0.28);
+    -moz-box-shadow: -1px 17px 33px -15px rgba(0,0,0,0.28);
+    box-shadow: -1px 17px 33px -15px rgba(0,0,0,0.28);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.sign-up-content .methods-wrapper .method:hover span{
+    color: black;
+}
+
+.sign-up-content .methods-wrapper .method img{
+    width: 24px;
+    justify-self: start;
+    position: absolute;
+    left: 25px;
+}
+
+.sign-up-content .methods-wrapper .method span{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #9A9797;
+}
+
+.sign-up-content .alternative-methods{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.sign-up-content .alternative-methods #existing-email{
+    color: black;
+}
+
+.sign-up-content .alternative-methods #new-email{
+    margin-left: auto;
+    color: #9A9797;
+    font-weight: 600;
+}
+
+.sign-up-content .alternative-methods #new-email:hover{
+    color: black;
+    transition: all 0.2s;
+}
