@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    font-family:  Roboto, sans-serif;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #16A085;
+}
+
+.recipe{
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 5px;
+    background-image: url("img/bicycle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 175px;
+    -webkit-box-shadow: -6px 7px 44px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 7px 44px -19px rgba(0,0,0,0.75);
+    box-shadow: -6px 7px 44px -19px rgba(0,0,0,0.75);
+}
+
+.recipe .title{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.recipe .title span{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.recipe .title img{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 500px;
+    margin-right: 6px;
+}
+
+.recipe .title img:hover{
+    margin-right: 3px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+}
+
+.recipe .items-wrapper{
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.recipe .items-wrapper > *{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.recipe .items-wrapper > * .price{
+    font-weight: 900;
+}
