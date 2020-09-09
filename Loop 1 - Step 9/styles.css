@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    background-color: #F7CD75;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.price{
+    display: flex;
+}
+
+.price span{
+    font-weight: 800;
+}
+
+.price span.pennies{
+    font-size: 0.8rem;
+}
+.wallet{
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wallet > *{
+    padding: 40px;
+}
+
+.wallet .cards{
+    width: 40%;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+.wallet .cards, .wallet .balance{
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+/* .wallet .cards:hover{
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+} */
+
+.wallet .cards .cards-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.wallet .cards .card{
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.wallet .cards .card img{
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.wallet .cards .card p{
+    font-size: 0.9rem;
+    opacity: 0.7;;
+}
+
+.wallet .balance{
+    width: 60%;
+    height: 100%;
+}
+
+.wallet .balance .current-balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.wallet .balance .history .transaction{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.wallet .balance .history .transaction .type{
+    height: 23px;
+    width: 23px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    margin-right: 25px;
+    background-size: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wallet .balance .history .transaction.gain .type{
+    background-image: url("img/plus.svg");
+}
+
+.wallet .balance .history .transaction.loss .type{
+    background-image: url("img/minus.svg");
+}
+
+.wallet .balance .history .transaction .transaction-name .name{
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.wallet .balance .history .transaction .transaction-name .info{
+    font-weight: 800;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.wallet .balance .history .transaction.loss .price span{
+    color: #8A9AC8;
+}
+
+.wallet .balance .history .transaction.gain .price span{
+    color: #8FD065;
+}
+
+.wallet .balance .history .transaction .price{
+    margin-left: auto;
+}
+
+.wallet .balance .history .transaction .price .dollars{
+    font-size: 0.9rem;
+}
+
+.wallet .balance .history .transaction .price .pennies{
+    font-size: 0.6rem;
+}

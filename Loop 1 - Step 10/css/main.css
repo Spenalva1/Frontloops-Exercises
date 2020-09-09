@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 18px;
+}
+
+body{
+    min-height: 100vh;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+.bordered-text{
+    width: 40%;
+    padding-left: 50px;
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.dots{
+    display: flex;
+}
+
+.dots > div{
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+a{
+    text-decoration: none;
+}
+
+a.button{
+    color: white;
+    background-color: #EA625C;
+    padding: 10px 15px 10px 15px;
+}
+
+a.button:hover{
+    background-color: #C9544F;
+    transition: background-color 300ms ;
+}
+
+.content-wrapper{
+    max-width: 1240px;
+    margin: auto;
+}
+
+header{
+    max-width: 1140px;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+}
+
+header nav{
+    display:flex;
+    align-items: center;
+    width: 100%;
+}
+
+header nav img{
+    margin-right: auto;
+    width: 1.5rem;
+}
+
+header nav a{
+    font-weight: 600;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid transparent;
+}
+
+header nav a:hover{
+    color: black;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+header nav form input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 25px;
+}
+
+header nav form input:focus{
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.keynote{
+    overflow: hidden;
+    height: 90vh;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.keynote img.background{
+    position: absolute;
+    right: -20%;
+    top: 10vh;
+    z-index: -1;
+}
+
+.description{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description article{
+    width: 30%;
+}
+
+.description article h3{
+    margin-bottom: 50px;
+}
+
+.description article p{
+    margin-bottom: 20px;
+}
+
+.description article a{
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #EA625C;
+}
+
+.description article a::before{
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid #EA625C;
+    width: 4rem;
+    margin: 0 1rem 0 0;
+    transform: translateY(-0.25rem);
+}
+
+.description article a:hover::before{
+    width: 5rem;
+    transition: width 50ms;
+}
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.buy img{
+    width: 50%;
+    height: 100%;
+}
+
+.features{
+    background-image: url("../img/runners.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+}
+
+.features .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.features .content-wrapper article{
+    width: 40%;
+}
+
+.features > *{
+    color: white;
+}
+
+.features p{
+    border-left: 3px solid white;
+    width: 100%;
+    color: white;
+}
+
+hr{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
