@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 18px;
+}
+
+:root {
+    --pink: #DE8A89;
+    --gray: #ECB9B8;
+    --gray-hover: #FBCBCB;
+    --white: #FFFFFF;
+}
+
+/* MAIN */
+
+body {
+    background: var(--pink);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 1145px;
+}
+
+/* TITLE */
+
+.title{
+    margin-left: 100px;
+}
+
+.title .cloth-types{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cloth-type{
+    margin-right: 50px;
+    color: var(--white);
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.cloth-type:hover{
+    opacity: 0.8;
+}
+
+.cloth-type.active{
+    opacity: 1;
+}
+
+.subtitle{
+    color: var(--white);
+    width: 70%;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+/* SETTINGS */
+
+.settings{
+    display: flex;
+    position: relative;
+}
+
+/* ARROWS */
+
+.arrow-box{
+    width: 100px;
+    height: 100px;
+    background-color: var(--white);
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.arrow-box:hover{
+    opacity: 0.5;
+}
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.arrow-left{
+    border-width: 7px 7px 7px 7px;
+    border-color: transparent black transparent transparent;
+}
+
+.arrow-right{
+    border-width: 7px 7px 7px 7px;
+    border-color: transparent transparent transparent black;
+}
+
+/* OPTION */
+
+.option{
+    width: 315px;
+    height: 315px;
+    background-color: black;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.5rem;
+}
+
+.option:nth-child(2) {
+    background: #3E3C3D;
+}
+
+.option:nth-child(3) {
+    background: #353334;
+}
+
+.option:nth-child(4) {
+    background: #201E1F;
+}
+
+.option-title{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: var(--pink);
+    margin-bottom: 10px;
+}
+
+.option-value{
+    font-size: 2rem;
+    font-size: 900;
+}
+
+/* START */
+
+.btn-start{
+    position: absolute;
+    bottom: -30px;
+    left: 115px;
+    width: 285px;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    height: 60px;
+    text-transform: uppercase;
+    transition: bottom 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-start:hover{
+    bottom: -25px;
+}
