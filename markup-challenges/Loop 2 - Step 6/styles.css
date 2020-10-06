@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --background: #78ACCD;
+    --orange: #E17A55;
+}
+
+/* MAIN */
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.container{
+    background-color: var(--white);
+    width: 400px;
+}
+
+.container > *{
+    padding: 20px;
+}
+
+.calendar-header{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+table{
+    width: 100%;
+    border-spacing: 5px;
+}
+
+th{
+    width: 50px;
+    height: 40px;
+    color: gray;
+}
+
+td{
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    font-weight: 500;
+}
+
+td.active{
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50%;
+}
+
+td.prev-month{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+td.with-events{
+    position: relative;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+}
+
+td.with-events span.events{
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+
+.calendar-footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-footer .hour, .calendar-footer .temperature{
+    width: 100px;
+}
+
+.calendar-footer #btn-add{
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.calendar-footer .temperature{
+    text-align: right;
+}
