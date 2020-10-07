@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --background: #4677F6;
+    --blue: #4677F6;
+    --progress: 30%;
+}
+
+/* MAIN */
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container{
+    background-color: var(--white);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > *{
+    padding-left: 30px;
+}
+
+.header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    filter: invert(90%) sepia(16%) saturate(203%) hue-rotate(168deg) brightness(87%) contrast(79%);
+    cursor: pointer;
+}
+
+.map{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-image: url("./img/map.png");
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05);
+    border-radius: 5px;
+    color: var(--white);
+    -webkit-box-shadow: 0px 32px 54px -39px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 32px 54px -39px rgba(0,0,0,0.75);
+    box-shadow: 0px 32px 54px -39px rgba(0,0,0,0.75);
+    margin-bottom: 50px;
+}
+
+.map .layer{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--blue);
+    opacity: 0.6;
+}
+
+.map .ori-dest{
+    display: flex;
+    align-items: center;
+}
+
+.map .ori-dest .progress{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #BBCCF8;
+    margin: 0 20px;
+}
+
+.map .ori-dest .progress::before, .map .ori-dest .progress::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white);
+    top: -4px;
+}
+
+.map .ori-dest .progress::before{
+    left: -4px;
+}
+
+.map .ori-dest .progress::after{
+    right: -4px;
+}
+
+.map .ori-dest .progress img{
+    position: absolute;
+    top: -30px;
+    left: calc(var(--progress) - 12px);
+}
+
+.map .ori-dest .progress .current-progress{
+    height: 100%;
+    width: var(--progress);
+    background-color: var(--white);
+}
+
+.map .travel-info{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.map .travel-info > *{
+    width: 50%;
+}
+
+.map button{
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.map button img{
+    margin-right: 8px;
+}
+
+.origin{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.directions{
+    list-style-type: none;
+}
+
+.directions li{
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.directions .direction{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.directions .direction img{
+    margin-right: 20px;
+}
+
+.directions .direction .instruction-ctn .distance{
+    font-size: 0.8rem;
+    color: #B4BFC9;
+}
+
+.directions .direction .instruction-ctn .instruction{
+    font-weight: 500;
+}
+
+.directions .image{
+    background-image: url("./img/streetview.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
