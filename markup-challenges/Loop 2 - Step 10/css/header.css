@@ -1,0 +1,102 @@
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .wrapper{
+    display: flex;
+    height: 100%;
+}
+
+header .wrapper > *{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .wrapper > *:last-child{
+    border-right: none;
+}
+
+header .logo-ctn, header .user-avatar-ctn{
+    width: 60px;
+}
+
+header .logo-ctn{
+    display: flex;
+    align-items: center;
+}
+
+header .logo-ctn img{
+    margin-right: 10px;
+}
+
+header img{
+    width: 40px;
+}
+
+header form{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex: 1;
+    position: relative;
+    min-width: 200px;
+}
+
+header form input{
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    outline: none;
+    padding: 5px 32px 5px 15px;
+}
+
+header form span{
+    position: absolute;
+    right: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .nav-item{
+    padding: 0 20px
+}
+
+nav .premium{
+    min-width: 135px;
+}
+
+.notifications{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.notifications span{
+    margin-right: 40px;
+}
+
+.notifications span:last-child{
+    margin: 0;
+}
+
+.user-avatar-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-avatar-ctn img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+
+

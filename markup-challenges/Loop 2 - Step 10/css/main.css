@@ -1,0 +1,55 @@
+@import url("./header.css");
+@import url("./profile-nav.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Roboto, sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --background: #F6F8F9;
+    --blue: #4677F6;
+    --progress: 30%;
+}
+
+.orange{
+    color: #FF7262;
+}
+
+.green{
+    color: #2BCD71;
+}
+
+.yellow{
+    color: #F1C40F;
+}
+
+.purple{
+    color: #9B58B6;
+}
+
+/* MAIN */
+img{width: 100px;}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+.wrapper{
+    width: 1114px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
